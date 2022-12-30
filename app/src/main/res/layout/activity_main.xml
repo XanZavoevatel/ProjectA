@@ -28,10 +28,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/top_menu"
         app:layout_constraintBottom_toTopOf="@id/bottom_menu"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp">
+        android:layout_marginStart="@dimen/margin_start_and_end_centre_figure"
+        android:layout_marginEnd="@dimen/margin_start_and_end_centre_figure"
+        android:layout_marginTop="@dimen/margin_top_and_bottom_centre_figure"
+        android:layout_marginBottom="@dimen/margin_top_and_bottom_centre_figure">
 
     </LinearLayout>
 

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_start_and_end_centre_figure">50dp</dimen>
+    <dimen name="margin_top_and_bottom_centre_figure">20dp</dimen>
+</resources>
