@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ProjectA</string>
+    <string name="margin_start_and_end_centre_figure">15dp</string>
 </resources>

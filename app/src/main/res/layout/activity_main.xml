@@ -19,14 +19,19 @@
 
     <LinearLayout
         android:id="@+id/liner_layout"
-        android:layout_width="300dp"
-        android:layout_height="500dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/cardview_dark_background"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/top_menu"
+        app:layout_constraintBottom_toTopOf="@id/bottom_menu"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
 
     </LinearLayout>
 
@@ -34,7 +39,7 @@
         android:id="@+id/top_menu"
         android:layout_width="0dp"
         android:layout_height="70dp"
-        android:background="@color/purple_700"
+        android:background="@color/teal_200"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
