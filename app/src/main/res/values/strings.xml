@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">ProjectA</string>
     <string name="main_activity_search">search</string>
+    <string name="sparta">The events of the picture tell of the bloody battle of Thermopylae in 480 BC. e., in which three hundred brave Spartans, led by their king Leonidas, blocked the path of the army of the Persian king Xerxes.</string>
+    <string name="avatar">Avatar!!!</string>
+    <string name="lord_ring">Saurons forces have laid siege to Minas Tirith, the capital of Gondor, in their efforts to eliminate the race of men. The once-great kingdom, watched over by a fading steward, has never been in more desperate need of its king. But can Aragorn (Viggo Mortensen) answer the call of his heritage and become what he was…</string>
 </resources>
