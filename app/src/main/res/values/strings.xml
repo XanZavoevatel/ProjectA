@@ -1,7 +1,15 @@
 <resources>
     <string name="app_name">ProjectA</string>
     <string name="main_activity_search">search</string>
-    <string name="sparta">The events of the picture tell of the bloody battle of Thermopylae in 480 BC. e., in which three hundred brave Spartans, led by their king Leonidas, blocked the path of the army of the Persian king Xerxes.</string>
-    <string name="avatar">Avatar!!!</string>
-    <string name="lord_ring">Saurons forces have laid siege to Minas Tirith, the capital of Gondor, in their efforts to eliminate the race of men. The once-great kingdom, watched over by a fading steward, has never been in more desperate need of its king. But can Aragorn (Viggo Mortensen) answer the call of his heritage and become what he was…</string>
+    <string name="buy_ticket">Buy a ticket</string>
+
+
+
+
+
+    <string name="sparta">The story of the bloody battle of Thermopylae in 480 BC. e., in which
+        three hundred brave Spartans, led by King Leonidas, blocked the path of the army of the
+        Persian king Xerxes.</string>
+    <string name="avatar">Former Marine Jake Sully is wheelchair-bound. Despite his weak body, Jake is still a warrior at heart. He is given the task of making a journey of several light years to the base of earthlings on the planet Pandora, where corporations are mining a rare mineral that is of great importance for the Earth\'s exit from the energy crisis.</string>
+    <string name="lord_ring">Sauron, the lord of the forces of darkness, sends his countless army under the walls of Minas Tirith, the fortress of Light\'s Hope. He looks forward to a close victory, but this is what prevents him from noticing two tiny figures - hobbits approaching Mount Doom, where they have to destroy the Ring of Omnipotence.</string>
 </resources>
