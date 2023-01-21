@@ -4,7 +4,7 @@
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
-    <color name="color_text_button">#000000</color>
-    <color name="dop_color">#093EA1</color>
-    <color name="main_color">#19B8C6</color>
+    <color name="color_text_button">#FF03DAC5</color>
+    <color name="dop_color">#E46B15</color>
+    <color name="main_color">#000000</color>
 </resources>

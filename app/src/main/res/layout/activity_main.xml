@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/bitmap_main_fon"
     tools:context=".MainActivity">
 
-    <FrameLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/top_menu"
         android:layout_width="0dp"
         android:layout_height="70dp"
-        android:background="@color/teal_200"
+        android:background="@color/main_color"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -27,12 +27,15 @@
                 android:layout_marginStart="10dp"
                 android:background="@drawable/ic_round_dehaze_24"/>
 
-            <EditText
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_text_search"
                 android:layout_width="250dp"
                 android:layout_height="50dp"
                 android:layout_marginVertical="@dimen/vertical_margin_bottom_menu"
                 android:layout_marginStart="20dp"
-                android:text="@string/main_activity_search"
+                android:hint="@string/main_activity_search"
+                android:textColorHint="@color/dop_color"
+                android:textColor="@color/dop_color"
                 android:inputType="text" />
 
             <Button
@@ -45,7 +48,7 @@
                 android:background="@drawable/ic_baseline_search_50"/>
         </LinearLayout>
 
-    </FrameLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
 
     <ScrollView
@@ -78,11 +81,11 @@
 
     </ScrollView>
 
-    <FrameLayout
+    <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/bottom_menu"
         android:layout_width="0dp"
         android:layout_height="70dp"
-        android:background="@color/teal_200"
+        android:background="@color/main_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -91,10 +94,11 @@
             android:id="@+id/buy_ticket"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_marginVertical="@dimen/vertical_margin_bottom_menu"
             android:layout_gravity="center"
-            android:text="@string/buy_ticket"/>
+            style="@style/Button"/>
 
-    </FrameLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

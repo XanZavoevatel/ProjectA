@@ -2,38 +2,42 @@
 
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:cardBackgroundColor="@color/teal_200"
-    android:id="@+id/content"
+    app:cardBackgroundColor="@color/main_color"
     app:cardCornerRadius="35dp"
     app:cardElevation="15dp">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center"
+        >
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/image_content"
             android:layout_width="wrap_content"
             android:layout_height="300dp"
             android:layout_gravity="center"
             android:layout_marginHorizontal="10dp"
             android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/ic_launcher_background" />
+            app:srcCompat="@drawable/ic_launcher_background"
+            android:contentDescription="@string/poster" />
 
-    <TextView
-        android:id="@+id/text_content"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="40dp"
-        android:layout_marginVertical="10dp"
-        android:ellipsize="end"
-        android:text="TextView"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="italic|bold"
-        android:fontFamily=""
-        android:layout_gravity="center"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginVertical="10dp"
+            android:ellipsize="end"
+            android:fontFamily=""
+            android:text="TextView"
+            android:textColor="@color/dop_color"
+            android:textSize="20sp"
+            android:textStyle="italic|bold" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
