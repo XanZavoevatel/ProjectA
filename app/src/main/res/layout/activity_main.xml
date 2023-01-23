@@ -51,11 +51,11 @@
     </com.google.android.material.appbar.AppBarLayout>
 
 
-    <ScrollView
-
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,21 +65,8 @@
         android:layout_marginEnd="@dimen/margin_start_and_end_centre_figure"
         android:layout_marginTop="@dimen/margin_top_and_bottom_centre_figure"
         android:layout_marginBottom="@dimen/margin_top_and_bottom_centre_figure"
-        android:scrollbars="none"
-        android:fillViewport="false"
-        >
+        />
 
-            <LinearLayout
-                android:id="@+id/liner_layout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-            </LinearLayout>
-
-
-
-    </ScrollView>
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/bottom_menu"
