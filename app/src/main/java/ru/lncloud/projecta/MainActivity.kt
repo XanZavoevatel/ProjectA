@@ -3,27 +3,28 @@ package ru.lncloud.projecta
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import ru.lncloud.projecta.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var activityMainBinding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val buttonMenu: Button = findViewById(R.id.button_top_menu)
-        buttonMenu.setOnClickListener {
+        activityMainBinding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(activityMainBinding.root)
+
+        activityMainBinding.buttonTopMenu.setOnClickListener {
             Toast.makeText(this@MainActivity, "This is menu", Toast.LENGTH_LONG).show()
         }
 
-        val buttonSearch: Button = findViewById(R.id.button_search)
-        buttonSearch.setOnClickListener {
+        activityMainBinding.buttonSearch.setOnClickListener {
             Toast.makeText(this@MainActivity, "This is search", Toast.LENGTH_LONG).show()
         }
 
-        val buttonBuyTicket: Button = findViewById(R.id.buy_ticket)
-        buttonBuyTicket.setOnClickListener {
+        activityMainBinding.buyTicket.setOnClickListener {
             Toast.makeText(this@MainActivity, "Ticket purchased", Toast.LENGTH_LONG).show()
         }
 
