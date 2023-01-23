@@ -33,7 +33,10 @@ class MovieListAdapter(context: Context) :
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
+        //Связываем контент с элементами макета
         fun onBind(movieInfo: MovieInfo) {
+
+
             val imageView: ImageView = itemView.findViewById(R.id.image_content)
             val titleView: TextView = itemView.findViewById(R.id.text_content)
 

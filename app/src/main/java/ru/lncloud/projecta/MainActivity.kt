@@ -8,18 +8,30 @@ import ru.lncloud.projecta.databinding.ActivityMainBinding
 import ru.lncloud.projecta.utils.MovieListAdapter
 
 class MainActivity : AppCompatActivity() {
+
+    //Создаем переменную для класса биндинг
     private lateinit var activityMainBinding: ActivityMainBinding
+
+    //список фильмов
     private val listMovies: MutableList<MovieInfo> = mutableListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        //инициализация переменной класса биндинга
         activityMainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(activityMainBinding.root)
 
+        //заполняем список фильмов контентом
         setInitialData()
 
+        //создаем экземпляр адаптера
         val adapter = MovieListAdapter(this)
+
+        //связываем наш пейджер в макете с адаптером
         activityMainBinding.viewPager.adapter = adapter
+
+        //передаем список фильмов в адаптер
         adapter.setMovies(listMovies)
 
 
