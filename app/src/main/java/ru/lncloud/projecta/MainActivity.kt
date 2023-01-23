@@ -1,11 +1,7 @@
 package ru.lncloud.projecta
 
-import android.graphics.Movie
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import ru.lncloud.projecta.dao.MovieInfo
@@ -23,9 +19,10 @@ class MainActivity : AppCompatActivity() {
 
         setInitialData()
 
-        val recyclerView = findViewById<RecyclerView>(R.id.recycler)
-        val adapter = MovieListAdapter(recyclerView, this)
-        recyclerView.adapter = adapter
+        val adapter = MovieListAdapter(this)
+        activityMainBinding.viewPager.adapter = adapter
+        adapter.setMovies(listMovies)
+
 
         activityMainBinding.buttonTopMenu.setOnClickListener {
             Toast.makeText(this@MainActivity, "This is menu", Toast.LENGTH_LONG).show()
@@ -68,9 +65,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun setInitialData() {
-        listMovies.add(MovieInfo(R.drawable.avatar, R.string.avatar.toString()))
-        listMovies.add(MovieInfo(R.drawable.sparta, R.string.sparta.toString()))
-        listMovies.add(MovieInfo(R.drawable.returnoftheking_1, R.string.lord_ring.toString()))
+        listMovies.add(MovieInfo(R.drawable.avatar, resources.getString(R.string.avatar)))
+        listMovies.add(MovieInfo(R.drawable.sparta, resources.getString(R.string.sparta)))
+        listMovies.add(MovieInfo(R.drawable.returnoftheking_1, resources.getString(R.string.lord_ring)))
     }
 
 

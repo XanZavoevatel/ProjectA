@@ -12,7 +12,7 @@ import ru.lncloud.projecta.R
 import ru.lncloud.projecta.dao.MovieInfo
 
 
-class MovieListAdapter(itemView: View, context: Context) :
+class MovieListAdapter(context: Context) :
     RecyclerView.Adapter<MovieListAdapter.ViewHolder>() {
 
     private val inflater: LayoutInflater = LayoutInflater.from(context)
@@ -25,21 +25,26 @@ class MovieListAdapter(itemView: View, context: Context) :
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val movieInfo = listMovies[position]
-        holder.imageView.setImageResource(movieInfo.idPoster)
-        holder.titleView.text = movieInfo.title
+        holder.onBind(listMovies[position])
+
     }
 
     override fun getItemCount(): Int = listMovies.size
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var imageView: ImageView
-        var titleView: TextView
 
-        init {
-            imageView = itemView.findViewById(R.id.image_content)
-            titleView = itemView.findViewById(R.id.text_content)
+        fun onBind(movieInfo: MovieInfo) {
+            val imageView: ImageView = itemView.findViewById(R.id.image_content)
+            val titleView: TextView = itemView.findViewById(R.id.text_content)
+
+            imageView.setImageResource(movieInfo.idPoster)
+            titleView.text = movieInfo.title
         }
 
+    }
+
+    fun setMovies(listMovies: List<MovieInfo>) {
+        this.listMovies.clear()
+        this.listMovies.addAll(listMovies)
     }
 }
