@@ -14,6 +14,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center"
+        android:layoutAnimation="@anim/layot_poster"
         >
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -24,7 +25,10 @@
             android:layout_marginHorizontal="10dp"
             android:layout_marginTop="10dp"
             app:srcCompat="@drawable/ic_launcher_background"
-            android:contentDescription="@string/poster" />
+            android:contentDescription="@string/poster"
+            android:stateListAnimator="@animator/animation_poster"
+            android:clickable="true"
+            android:focusable="true" />
 
         <TextView
             android:id="@+id/text_content"

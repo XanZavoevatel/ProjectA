@@ -82,7 +82,8 @@
             android:layout_height="match_parent"
             android:layout_marginVertical="@dimen/vertical_margin_bottom_menu"
             android:layout_gravity="center"
-            style="@style/Button"/>
+            style="@style/Button"
+            android:stateListAnimator="@animator/animation_poster"/>
 
     </com.google.android.material.appbar.MaterialToolbar>
 
