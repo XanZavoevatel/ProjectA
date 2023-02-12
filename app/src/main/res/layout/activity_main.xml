@@ -76,6 +76,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/switch_theme"
+            android:textColor="@color/dop_color"
+            app:trackTint="#ffffff"
+            app:thumbTint="@color/dop_color"
+            />
+
         <Button
             android:id="@+id/buy_ticket"
             android:layout_width="wrap_content"

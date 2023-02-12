@@ -3,6 +3,7 @@ package ru.lncloud.projecta
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import ru.lncloud.projecta.dao.MovieInfo
 import ru.lncloud.projecta.databinding.ActivityMainBinding
 import ru.lncloud.projecta.utils.MovieListAdapter
@@ -45,6 +46,14 @@ class MainActivity : AppCompatActivity() {
 
         activityMainBinding.buyTicket.setOnClickListener {
             Toast.makeText(this@MainActivity, "Ticket purchased", Toast.LENGTH_LONG).show()
+        }
+
+        activityMainBinding.switchTheme.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (isChecked) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            }
         }
     }
 
